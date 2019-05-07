@@ -35,13 +35,14 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.Font = new System.Drawing.Font("굴림", 14F);
             this.btnEdit.Location = new System.Drawing.Point(11, 82);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(231, 59);
             this.btnEdit.TabIndex = 0;
             this.btnEdit.Text = "입력";
             this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.button1_Click);
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // lblResult
             // 
@@ -52,7 +53,6 @@
             this.lblResult.Size = new System.Drawing.Size(65, 19);
             this.lblResult.TabIndex = 1;
             this.lblResult.Text = "결과 : ";
-            this.lblResult.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtEdit
             // 
@@ -73,6 +73,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "입출력 문자";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
